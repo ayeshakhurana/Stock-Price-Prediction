@@ -9,7 +9,7 @@ from sklearn.preprocessing import MinMaxScaler,StandardScaler
 model = load_model("Stock Prediction Model.keras")
 
 st.header("Stock Market Sentiment Analysis & Predictor")
-stock=st.text_input("Enter Stock Symbol","ZOMATO.NS")
+stock=st.text_input("Enter Stock Symbol","MDB")
 start='2015-03-01'
 end='2025-03-01'
 
