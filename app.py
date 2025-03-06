@@ -103,24 +103,19 @@ y_pred=y_pred * scale
 y=y * scale
 
 st.header('OUTPUT ')
+st.header("OUTPUT")
 st.subheader("ORIGINAL CLOSING PRICE VS PREDICTED CLOSING PRICE")
 
-y_pred_original = scaler.inverse_transform(y_pred.reshape(-1, 1))
-y = scaler.inverse_transform(y.reshape(-1, 1))
- 
-
-fig4 = plt.figure(figsize=(15, 10))
+fig4 = plt.figure(figsize=(35, 25))
 plt.style.use('dark_background')
+plt.plot(y_pred, color='r', label='Predicted Price')
+plt.plot(y, color='yellow', label='Original Price')
 
-plt.plot(range(len(y)), y, color='yellow', label='Original Price', linewidth=2)
-plt.plot(range(len(y_pred_original)), y_pred_original, color='r', label='Predicted Price', linewidth=2)
+plt.xlabel('Time', fontsize=30)  # Increased label size
+plt.ylabel('Price', fontsize=30)  # Increased label size
+plt.legend(fontsize=25)  # Increase legend size
+plt.xticks(fontsize=20)  # Increase tick label size
+plt.yticks(fontsize=20)
 
-plt.xlabel("Time", fontsize=20)
-plt.ylabel("Price", fontsize=20)
-plt.title("Original vs Predicted Closing Price", fontsize=25)
-plt.legend(fontsize=15)
-plt.xticks(fontsize=12)
-plt.yticks(fontsize=12)
-
+plt.show()
 st.pyplot(fig4)
-
