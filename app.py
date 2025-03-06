@@ -9,7 +9,7 @@ from sklearn.preprocessing import MinMaxScaler,StandardScaler
 model = load_model("Stock Prediction Model.keras")
 
 st.header("Stock Market Sentiment Analysis & Predictor")
-stock=st.text_input("Enter Stock Synbol","GOOG")
+stock=st.text_input("Enter Stock Synbol","ZOMATO.NS")
 start='2015-03-01'
 end='2025-03-01'
 
@@ -102,19 +102,18 @@ scale=1/scaler.scale_
 y_pred=y_pred * scale
 y=y * scale
 
-st.header('OUTPUT ')
 st.header("OUTPUT")
 st.subheader("ORIGINAL CLOSING PRICE VS PREDICTED CLOSING PRICE")
 
-fig4 = plt.figure(figsize=(35, 25))
+fig4 = plt.figure(figsize=(25,20))
 plt.style.use('dark_background')
 plt.plot(y_pred, color='r', label='Predicted Price')
 plt.plot(y, color='yellow', label='Original Price')
 
-plt.xlabel('Time', fontsize=30)  # Increased label size
-plt.ylabel('Price', fontsize=30)  # Increased label size
-plt.legend(fontsize=25)  # Increase legend size
-plt.xticks(fontsize=20)  # Increase tick label size
+plt.xlabel('Time', fontsize=50)  
+plt.ylabel('Price', fontsize=50)  
+plt.legend(fontsize=25)  
+plt.xticks(fontsize=20) 
 plt.yticks(fontsize=20)
 
 plt.show()
