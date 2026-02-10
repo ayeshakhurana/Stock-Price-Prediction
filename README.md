@@ -13,13 +13,6 @@ A streamlined Python-based stock price prediction project using Keras (TensorFlo
 
 This project demonstrates the application of neural networks in financial market prediction, providing an accessible entry point for understanding how machine learning can be applied to stock market analysis. Built with simplicity in mind, it offers immediate usability while maintaining extensibility for advanced features.
 
-### Why This Project?
-
-- **Educational Focus**: Perfect for learning ML applications in finance
-- **Plug-and-Play**: Pre-trained model ready for immediate use
-- **Extensible Architecture**: Easy to modify and enhance
-- **Real Market Data**: Uses actual historical stock prices
-
 ## 🚀 Features
 
 ### Core Functionality
@@ -137,32 +130,6 @@ scikit-learn>=1.0.0
 matplotlib>=3.4.0
 ```
 
-## 🎯 Roadmap & Future Enhancements
-
-### Phase 1: Core Improvements
-- [ ] **Model Retraining Pipeline**: Automated model updates with new data
-- [ ] **Performance Metrics**: Add RMSE, MAE, directional accuracy
-- [ ] **Data Validation**: Enhanced input validation and error handling
-- [ ] **Logging System**: Comprehensive logging for debugging
-
-### Phase 2: Feature Expansion
-- [ ] **Technical Analysis**: RSI, MACD, Bollinger Bands integration
-- [ ] **Sentiment Analysis**: News and social media sentiment incorporation
-- [ ] **Multi-Asset Support**: Cryptocurrency, forex, commodities
-- [ ] **Real-time Data**: Live market data streaming
-
-### Phase 3: Interface Development
-- [ ] **Web Dashboard**: Streamlit/Flask-based GUI
-- [ ] **API Endpoint**: REST API for external integrations
-- [ ] **Mobile App**: React Native or Flutter mobile interface
-- [ ] **Visualization Suite**: Interactive charts and analytics
-
-### Phase 4: Advanced Analytics
-- [ ] **Ensemble Models**: Combine multiple prediction algorithms
-- [ ] **Risk Assessment**: VaR (Value at Risk) calculations
-- [ ] **Portfolio Optimization**: Multi-stock portfolio suggestions
-- [ ] **Backtesting Framework**: Historical strategy validation
-
 ## 🧪 Testing & Validation
 
 ### Model Performance Testing
@@ -182,27 +149,12 @@ python -m pytest tests/
 
 ## 🤝 Contributing
 
-We welcome contributions! Here's how you can help:
-
 ### How to Contribute
 1. **Fork the Repository**
 2. **Create Feature Branch** (`git checkout -b feature/AmazingFeature`)
 3. **Commit Changes** (`git commit -m 'Add AmazingFeature'`)
 4. **Push to Branch** (`git push origin feature/AmazingFeature`)
 5. **Open Pull Request**
-
-### Contribution Areas
-- 🐛 **Bug Fixes**: Report and fix issues
-- ✨ **New Features**: Add functionality and improvements
-- 📚 **Documentation**: Improve guides and examples
-- 🧪 **Testing**: Add unit tests and validation
-- 🎨 **UI/UX**: Enhance user interface and experience
-
-### Code Standards
-- Follow PEP 8 style guidelines
-- Add docstrings to functions and classes
-- Include unit tests for new features
-- Update documentation for changes
 
 ## 📚 Learning Resources
 
@@ -225,30 +177,7 @@ We welcome contributions! Here's how you can help:
 - 🐛 **Bug Reports**: [GitHub Issues](https://github.com/ayeshakhurana/Stock-Price-Prediction/issues)
 - 💡 **Feature Requests**: [GitHub Discussions](https://github.com/ayeshakhurana/Stock-Price-Prediction/discussions)
 - 📧 **General Questions**: Contact through GitHub profile
-
-### Community
-- ⭐ **Star the Repository** if you find it helpful
-- 🍴 **Fork and Contribute** to make it even better
-- 📢 **Share with Others** who might benefit from this project
-
-## 📄 License
-
-This project is currently **unlicensed**. Please contact the repository owner [@ayeshakhurana](https://github.com/ayeshakhurana) for licensing details and usage permissions.
-
-### Recommended License
-Consider adding one of these open-source licenses:
-- **MIT License**: Simple and permissive
-- **Apache 2.0**: Includes patent protection
-- **GPL v3**: Copyleft license
-
-## 👥 Acknowledgments
-
-### Special Thanks
-- **TensorFlow/Keras Team**: For the excellent deep learning framework
-- **Yahoo Finance**: For providing free stock market data
-- **Python Community**: For the rich ecosystem of data science libraries
-- **Open Source Contributors**: For making this project possible
-
+- 
 ### Built With
 - 🐍 **Python**: Core programming language
 - 🧠 **TensorFlow/Keras**: Neural network framework
